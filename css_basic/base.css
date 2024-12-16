@@ -37,6 +37,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    display: flex;
+    flex-direction: column;
 	line-height: 1;
 }
 blockquote, q {
@@ -52,6 +54,12 @@ table {
 	border-spacing: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
 
 /* Fonts and colors */
 
@@ -63,6 +71,8 @@ h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
 article {
+    flex: 2;
+    overflow-y: auto;
 }
 header {
 	border-bottom: 1px solid rgb(221,221,221);
@@ -73,6 +83,8 @@ header a {
 }
 aside {
 	background: #FAFAFA;
+    flex: 1;
+    overflow-y: auto;
 }
 aside p {
 	border: 1px solid #bbb;
